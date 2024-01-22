@@ -1,26 +1,30 @@
 <p align="center">
-    <a href="https://github.com/yii-tools/template" target="_blank">
+    <a href="https://github.com/yii3-extensions/asset-flowbite" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/121752654?s=200&v=4" height="100px">
     </a>
-    <h1 align="center">Template.</h1>
+    <a href="https://flowbite.com/" target="_blank">
+        <img src="https://flowbite.com/docs/images/logo.svg" height="100px">
+    </a>
+    <h1 align="center">Asset for Flowbite for YiiFramework v. 3.0.</h1>
     <br>
 </p>
 
+
 <p align="center">
-    <a href="https://github.com/yii-tools/template/actions/workflows/build.yml" target="_blank">
-        <img src="https://github.com/yii-tools/template/actions/workflows/build.yml/badge.svg" alt="PHPUnit">
+    <a href="https://github.com/yii3-extensions/asset-flowbite/actions/workflows/build.yml" target="_blank">
+        <img src="https://github.com/yii3-extensions/asset-flowbite/actions/workflows/build.yml/badge.svg" alt="PHPUnit">
     </a>
-    <a href="https://codecov.io/gh/yii-tools/template" target="_blank">
-        <img src="https://codecov.io/gh/yii-tools/template/branch/main/graph/badge.svg?token=MF0XUGVLYC" alt="Codecov">
+    <a href="https://codecov.io/gh/yii3-extensions/asset-flowbite" target="_blank">
+        <img src="https://codecov.io/gh/yii3-extensions/asset-flowbite/branch/main/graph/badge.svg?token=MF0XUGVLYC" alt="Codecov">
     </a>
-    <a href="https://dashboard.stryker-mutator.io/reports/github.com/yii-tools/template/main" target="_blank">
+    <a href="https://dashboard.stryker-mutator.io/reports/github.com/yii3-extensions/asset-flowbite/main" target="_blank">
         <img src="https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii2-extensions%2Fasset-bootstrap5%2Fmain" alt="Infection">
     </a>
-    <a href="https://github.com/yii-tools/template/actions/workflows/static.yml" target="_blank">
-        <img src="https://github.com/yii-tools/template/actions/workflows/static.yml/badge.svg" alt="Psalm">
+    <a href="https://github.com/yii3-extensions/asset-flowbite/actions/workflows/static.yml" target="_blank">
+        <img src="https://github.com/yii3-extensions/asset-flowbite/actions/workflows/static.yml/badge.svg" alt="Psalm">
     </a>
-    <a href="https://shepherd.dev/github/yii-tools/template" target="_blank">
-        <img src="https://shepherd.dev/github/yii-tools/template/coverage.svg" alt="Psalm Coverage">
+    <a href="https://shepherd.dev/github/yii3-extensions/asset-flowbite" target="_blank">
+        <img src="https://shepherd.dev/github/yii3-extensions/asset-flowbite/coverage.svg" alt="Psalm Coverage">
     </a>
     <a href="https://github.styleci.io/repos/494495136?branch=main" target="_blank">
         <img src="https://github.styleci.io/repos/494495136/shield?branch=main" alt="Style ci">
@@ -29,21 +33,22 @@
 
 ## Installation
 
+This package requires [npm](https://www.npmjs.com/) for [php-forge/foxy](https://www.github.com/php-forge/foxy), which
+manages the installation of npm packages and resource compilation.
+
 The preferred way to install this extension is through [composer](https://getcomposer.org/download/).
 
 Either run
 
 ```shell
-composer require --prefer-dist package
+composer require --prefer-dist yii3-extensions/asset-flowbite:"^0.1"
 ```
 
 or add
 
 ```json
-"package": "version"
+"yii3-extensions/asset-flowbite": "^0.1"
 ```
-
-to the require-dev section of your `composer.json` file. 
 
 ## Usage
 
