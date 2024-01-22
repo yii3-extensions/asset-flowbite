@@ -18,7 +18,7 @@
         <img src="https://codecov.io/gh/yii3-extensions/asset-flowbite/branch/main/graph/badge.svg?token=MF0XUGVLYC" alt="Codecov">
     </a>
     <a href="https://dashboard.stryker-mutator.io/reports/github.com/yii3-extensions/asset-flowbite/main" target="_blank">
-        <img src="https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii2-extensions%2Fasset-bootstrap5%2Fmain" alt="Infection">
+        <img src="https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii3-extensions%2Fasset-flowbite%2Fmain" alt="Infection">
     </a>
     <a href="https://github.com/yii3-extensions/asset-flowbite/actions/workflows/static.yml" target="_blank">
         <img src="https://github.com/yii3-extensions/asset-flowbite/actions/workflows/static.yml/badge.svg" alt="Psalm">
@@ -26,8 +26,8 @@
     <a href="https://shepherd.dev/github/yii3-extensions/asset-flowbite" target="_blank">
         <img src="https://shepherd.dev/github/yii3-extensions/asset-flowbite/coverage.svg" alt="Psalm Coverage">
     </a>
-    <a href="https://github.styleci.io/repos/494495136?branch=main" target="_blank">
-        <img src="https://github.styleci.io/repos/494495136/shield?branch=main" alt="Style ci">
+    <a href="https://github.styleci.io/repos/746576513?branch=initital-commit" target="_blank">
+        <img src="https://github.styleci.io/repos/746576513/shield?branch=initital-commit" alt="Style ci">
     </a>           
 </p>
 
