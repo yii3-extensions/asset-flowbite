@@ -9,6 +9,7 @@ To run the checker, execute the following command:
 ```shell
 composer run check-dependencies
 ```
+
 ## Easy coding standard
 
 The code is checked with [Easy Coding Standard](https://github.com/easy-coding-standard/easy-coding-standard) and
