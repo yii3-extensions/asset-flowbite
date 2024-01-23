@@ -2,16 +2,22 @@
 
 declare(strict_types=1);
 
-namespace Yii\Asset\Tests\Css;
+namespace Yii\Asset\Tests;
 
 use Yii\Asset\FlowbiteCdn;
 use Yii\Asset\Tests\Support\TestSupport;
-use Yiisoft\Assets\AssetBundle;
+use Yiisoft\Assets\Exception\InvalidConfigException;
 
+/**
+ * @psalm-suppress PropertyNotSetInConstructor
+ */
 final class FlowbiteCdnTest extends \PHPUnit\Framework\TestCase
 {
     use TestSupport;
 
+    /**
+     * @throws InvalidConfigException
+     */
     public function testRegister(): void
     {
         $this->assertFalse($this->assetManager->isRegisteredBundle(FlowbiteCdn::class));
@@ -19,10 +25,6 @@ final class FlowbiteCdnTest extends \PHPUnit\Framework\TestCase
         $this->assetManager->register(FlowbiteCdn::class);
 
         $this->assertTrue($this->assetManager->isRegisteredBundle(FlowbiteCdn::class));
-
-        $bundle = $this->assetManager->getBundle(FlowbiteCdn::class);
-
-        $this->assertInstanceOf(AssetBundle::class, $bundle);
         $this->assertSame(
             [
                 'https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css' => [
