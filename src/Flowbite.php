@@ -7,6 +7,9 @@ namespace Yii\Asset;
 use Yiisoft\Assets\AssetBundle;
 use Yiisoft\Files\PathMatcher\PathMatcher;
 
+/**
+ * Flowbite CSS bundle.
+ */
 final class Flowbite extends AssetBundle
 {
     public string|null $basePath = '@assets';
@@ -24,7 +27,7 @@ final class Flowbite extends AssetBundle
         $this->css = [$cssFiles];
         $this->js = [$jsFiles];
         $this->publishOptions = [
-            'filter' => $pathMatcher->only("**/{$cssFiles}", "**/{$jsFiles}", "**/{$jsFiles}.map"),
+            'filter' => $pathMatcher->only("**/$cssFiles", "**/$jsFiles", "**/$jsFiles.map"),
         ];
     }
 }

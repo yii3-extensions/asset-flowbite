@@ -2,26 +2,32 @@
 
 declare(strict_types=1);
 
-namespace Yii\Asset\Tests\Css;
+namespace Yii\Asset\Tests;
 
 use PHPUnit\Framework\Attributes\RequiresPhp;
 use Yii\Asset\Flowbite;
 use Yii\Asset\Tests\Support\TestSupport;
-use Yiisoft\Assets\AssetBundle;
+use Yiisoft\Assets\Exception\InvalidConfigException;
 
 use function runkit_constant_redefine;
 
+/**
+ * @psalm-suppress PropertyNotSetInConstructor
+ */
 final class FlowbiteTest extends \PHPUnit\Framework\TestCase
 {
     use TestSupport;
 
+    /**
+     * @throws InvalidConfigException
+     */
     public function testRegister(): void
     {
         $this->assertFalse($this->assetManager->isRegisteredBundle(Flowbite::class));
 
         $this->assetManager->register(Flowbite::class);
 
-        $this->assertInstanceOf(AssetBundle::class, $this->assetManager->getBundle(Flowbite::class));
+        $this->assertTrue($this->assetManager->isRegisteredBundle(Flowbite::class));
         $this->assertSame(
             [
                 '/55145ba9/flowbite.css' => ['/55145ba9/flowbite.css'],
@@ -42,6 +48,9 @@ final class FlowbiteTest extends \PHPUnit\Framework\TestCase
         $this->assertFileDoesNotExist(__DIR__ . '/Support/runtime/55145ba9/flowbite.min.js.map');
     }
 
+    /**
+     * @throws InvalidConfigException
+     */
     #[RequiresPhp('8.1')]
     public function testRegisterWithEnvironmentProd(): void
     {
@@ -51,7 +60,7 @@ final class FlowbiteTest extends \PHPUnit\Framework\TestCase
 
         $this->assetManager->register(Flowbite::class);
 
-        $this->assertInstanceOf(AssetBundle::class, $this->assetManager->getBundle(Flowbite::class));
+        $this->assertTrue($this->assetManager->isRegisteredBundle(Flowbite::class));
         $this->assertSame(
             [
                 '/55145ba9/flowbite.min.css' => ['/55145ba9/flowbite.min.css'],

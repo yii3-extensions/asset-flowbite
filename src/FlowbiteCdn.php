@@ -6,6 +6,9 @@ namespace Yii\Asset;
 
 use Yiisoft\Assets\AssetBundle;
 
+/**
+ * Flowbite CDN CSS bundle.
+ */
 final class FlowbiteCdn extends AssetBundle
 {
     public bool $cdn = true;
